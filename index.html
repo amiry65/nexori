@@ -24,7 +24,22 @@
     button:hover {background:#333;}
     footer {text-align:center; padding:20px; font-size:0.9em; color:#999;}
     .contact-info {margin-top: 30px; font-size: 1em;}
-  </style>
+    /* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Animation to Each Service Card */
+.service {
+  animation: fadeInUp 1s ease forwards;
+}  </style>
 </head>
 <body>
 
